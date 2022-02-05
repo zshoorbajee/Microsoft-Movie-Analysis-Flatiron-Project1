@@ -4,3 +4,8 @@ __pycache__
 *.pytest_cache
 .gitattributes
 !*.zip
+zippedData/im.db
+README.ipynb
+draft_notebook.ipynb
+Movie_Analysis.pdf
+github.pdf
