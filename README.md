@@ -20,8 +20,10 @@ ___
 I use the **number of votes a movie has received** on IMDb as an analogue for the number of viewers. The votes may be negative or positive, but we can infer that a vote means someone actually watched the film. Using this metric, I attempt to answer these questions:
 
 - Which 10 genres tend to perform best?
-- How much of Microsoft's budget should it focus on making comedies? 
-- How much fo Microsoft's budget should it focus on making animated movies?
+- How should Microsoft focus on making comedies? 
+- How shoudl Microsoft focus on making animated movies?
+
+*As explained in more detail in the full Jupyter Notebook, I have also isolated the top 10% of movies (in terms of number of votes). There are a number of reasons for this, but it boils down to wanting to draw conclusions from a subset of the best-performing movies, as opposed to a cacophony of niche movies (which is the bulk of movies on IMDb).*
 ___
 
 ![Person watching TV](./images/streaming-cropped.jpg)
@@ -100,3 +102,12 @@ In this analysis I attemped to determine the most successful movie genres as wel
 2. Microsoft should focus about a third of its efforts on comedy movies.
 
 3. Microsoft should focus about 4 percent of its efforts on animated movies.
+___
+
+## Next Steps
+
+As I mentioned before, I came to these conclusions after dropping 90% of the data I had available to me. I justified this by saying that those were niche movies that barely a thousand or so people on the internet knew of, and that those weren’t the types of movies I’d want to analyze when making recommendations to a multi-billion dollar company like Microsoft.
+
+I could further explore this by **answering the same questions for the bottom 90%** as I did for the top 10%. Knowing the differences between the tiers might lead to other helpful insights.
+
+Having said that, **the division between the two tiers is arbitrary**; I could have looked at the top 5% or 25%. Another way to go about this would be to merge in a new dataset that told us which movie studio is behind each movie. I could then separate the data into movies made by established, big-budget studios and movies that are not. Looking at the differences among movies in those two tiers might give us different results and possibly lead to different recommendations.
